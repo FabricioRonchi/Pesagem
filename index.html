@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="appBalanca">
+	<head>		
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">						
+		<link rel="shortcut icon" href="assets/img/logo-top.png">
+		<title>Balança</title>
+	</head>	
+	<body ng-controller="ctrlBalanca">
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    	<div class="container">
+      	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          	<span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>          
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastro <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+              	<li><a href="#NewWeight">Nova Pesagem</a></li>
+                <li><a href="#NewBull">Novo Boi</a></li>                                                                                             
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consulta <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+              	<li><a href="#ConWeight">Pesagem</a></li>
+                <li><a href="#ConBull">Boi</a></li>                
+              </ul>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-sm-12">    			 
+            <div ng-view></div>        
+    		</div>    		
+    	</div>
+    </div>
+    <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/angular.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+'use strick'
+
+var app = angular.module('appBalanca', []);
+
+app.config(function($routeProvider) {
+  $routeProvider.
+    when('/Home', {
+      templateUrl: 'templates/home.html',
+      controller: 'ctrlHome'
+    }).
+    when('/NewBull', {
+      templateUrl: 'templates/newbull.html',
+      controller: 'ctrlNewBull'
+    }).    
+    otherwise({
+      redirectTo: '/Home'
+	});
+});
+
+app.controller('ctrlHome', ['$scope', function ($scope) {
+	
+}]);
+
+app.controller('ctrlBalanca', ['$scope', function ($scope) {
+	
+}]);
+
+app.controller('ctrlNewBull', ['$scope', function ($scope) {
+	
+}]);
