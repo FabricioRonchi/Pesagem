@@ -31,7 +31,9 @@ app.controller('ctrlNewBull', ['$scope', function ($scope) {
     brinco: ""    
   });
 
-  $('#nascimento').datepicker();
+  $('#nascimento').datepicker({
+    autoclose: true
+  });
 
   $scope.salvar = function(){
     alert("Salvo com sucesso!");
