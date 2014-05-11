@@ -26,5 +26,21 @@ app.controller('ctrlBalanca', ['$scope', function ($scope) {
 }]);
 
 app.controller('ctrlNewBull', ['$scope', function ($scope) {
-	
+
+  angular.extend($scope, {
+    brinco: "",
+    nascimento: new Date()
+  });
+
+  $scope.salvar = function(){
+    alert("Salvo com sucesso!");
+  };
+
+  $scope.limpar = function(){
+     angular.extend($scope, {
+      brinco: "",
+      nascimento: new Date()
+    });
+  };
+
 }]);
