@@ -28,9 +28,10 @@ app.controller('ctrlBalanca', ['$scope', function ($scope) {
 app.controller('ctrlNewBull', ['$scope', function ($scope) {
 
   angular.extend($scope, {
-    brinco: "",
-    nascimento: new Date()
+    brinco: ""    
   });
+
+  $('#nascimento').datepicker();
 
   $scope.salvar = function(){
     alert("Salvo com sucesso!");
@@ -38,8 +39,7 @@ app.controller('ctrlNewBull', ['$scope', function ($scope) {
 
   $scope.limpar = function(){
      angular.extend($scope, {
-      brinco: "",
-      nascimento: new Date()
+      brinco: ""      
     });
   };
 
