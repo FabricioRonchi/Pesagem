@@ -32,7 +32,8 @@ app.controller('ctrlNewBull', ['$scope', function ($scope) {
   });
 
   $('#nascimento').datepicker({
-    autoclose: true
+    autoclose: true,
+    format: "dd/mm/yyyy"
   });
 
   $scope.salvar = function(){
