@@ -1,0 +1,34 @@
+<div class="starter-template">
+	<div class="col-sm-12">
+		<div class="row">
+			<button type="button" class="btn btn-primary" ng-click="gerarPDF()">
+				<em class="glyphicon glyphicon-file"></em>&nbsp;&nbsp;Gerar PDF
+			</button>
+		</div>
+		<br />			
+		<table class="table table-bordered table-condensed" id="pdf">			
+			<thead>
+				<tr>
+					<th class="text-center">Brinco</th>
+					<th class="text-center">01/03/2014</th>					
+					<th class="text-center">05/04/2014</th>
+					<th class="text-center">Evolução</th>
+					<th class="text-center">04/06/2014</th>
+					<th class="text-center">Evolução</th>
+					<th class="text-center">Evolução Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="obj in bois">
+					<td>{{obj.brinco}}</td>
+					<td>{{obj.peso1}} Kg</td>					
+					<td>{{obj.peso2}} Kg</td>
+					<td><em class="glyphicon glyphicon-arrow-up"></em>&nbsp;&nbsp;{{evolucao(obj.peso1,obj.peso2)}}</td>
+					<td>{{obj.peso3}} Kg</td>
+					<td><em class="glyphicon glyphicon-arrow-up"></em>&nbsp;&nbsp;{{evolucao(obj.peso2,obj.peso3)}}</td>
+					<td><em class="glyphicon glyphicon-arrow-up"></em>&nbsp;&nbsp;{{evolucao(obj.peso1,obj.peso3)}}</td>
+				</tr>
+			</tbody>
+		</table>		
+	</div>	
+</div>
