@@ -11,7 +11,11 @@ app.config(function($routeProvider) {
     when('/NewBull', {
       templateUrl: 'templates/newbull.html',
       controller: 'ctrlNewBull'
-    }).    
+    }).
+    when('/NewWeighing', {
+      templateUrl: 'templates/newweighing.html ',
+      controller: 'ctrlNewWeighing'
+    }).  
     otherwise({
       redirectTo: '/Home'
 	});
@@ -23,6 +27,10 @@ app.controller('ctrlHome', ['$scope', function ($scope) {
 
 app.controller('ctrlBalanca', ['$scope', function ($scope) {
 	
+}]);
+
+app.controller('ctrlNewWeighing', ['$scope', function ($scope) {
+  
 }]);
 
 app.controller('ctrlNewBull', ['$scope', function ($scope) {
