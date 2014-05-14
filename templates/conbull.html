@@ -5,12 +5,14 @@
 				<tr>
 					<th class="text-center">Brinco</th>
 					<th class="text-center">Data de Nascimento</th>
+					<th class="text-center">Situação</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>MMNN22</td>
+				<tr ng-repeat="obj in bois">
+					<td>{{obj.brinco}}</td>
 					<td>20/10/2014</td>
+					<td>{{1}}</td>
 				</tr>
 			</tbody>
 		</table>
