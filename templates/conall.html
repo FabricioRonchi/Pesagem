@@ -6,27 +6,21 @@
 			</button>
 		</div>
 		<br />	
-		<table class="table table-bordered table-condensed" id="pdf">						
+		<table class="table table-bordered table-condensed" ng-repeat="obj in bois">						
 			<thead>
 				<tr>
 					<th class="text-center">Brinco</th>
-					<th class="text-center">01/03/2014</th>					
-					<th class="text-center">05/04/2014</th>
-					<th class="text-center">Evolução</th>
-					<th class="text-center">04/06/2014</th>
-					<th class="text-center">Evolução</th>
+					<th ng-repeat="pesos in obj.pesos" class="text-center">
+						{{pesos.data}}
+					</th>										
 					<th class="text-center">Total</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="obj in bois">
-					<td>{{obj.brinco}}</td>
-					<td>{{obj.peso1}} Kg</td>					
-					<td>{{obj.peso2}} Kg</td>
-					<td>{{evolucao(obj.peso1,obj.peso2)}}</td>
-					<td>{{obj.peso3}} Kg</td>
-					<td>{{evolucao(obj.peso2,obj.peso3)}}</td>
-					<td>{{evolucao(obj.peso1,obj.peso3)}}</td>
+				<tr>
+					<td>{{obj.brinco}}</td>					
+					<td ng-repeat="pesos in obj.pesos">{{pesos.peso}}</td>					
+					<td>{{evolucao(obj.pesos[0].peso, obj.pesos[obj.pesos.length - 1].peso)}}</td>
 				</tr>
 			</tbody>
 		</table>		
