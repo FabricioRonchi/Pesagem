@@ -25,3 +25,7 @@ body {
 	border: none; 
 	margin: 0px;
 }
+
+.ui-pnotify  {
+	margin-top: 60px !important;
+}

@@ -125,6 +125,22 @@ app.controller('ctrlConBull', ['$scope', function ($scope) {
 }]);
 
 app.controller('ctrlNewWeighing', ['$scope', function ($scope) {
+
+  $("#brinco").mask("AAAAAA");
+  $("#peso").mask("999,99");
+  
+  var brinco = ""; 
+
+  $scope.salvar = function(){    
+    brinco = angular.uppercase($("#brinco").val());
+    new PNotify({text: "<strong>" + brinco + "</strong> salvo com sucesso!", type: 'success', icon: '', delay: 2500});    
+    $scope.limpar();
+  };
+
+  $scope.limpar = function() {
+    $("#brinco").val("");
+    $('#peso').val("");
+  };
   
 }]);
 
@@ -144,8 +160,16 @@ app.controller('ctrlConWeighing', ['$scope', function ($scope) {
 }]);
 
 app.controller('ctrlAbaterBull', ['$scope', function ($scope) {
-  
+
   $("#brinco").mask("AAAAAA");
+
+  var brinco = "";
+
+  $scope.abater = function() {    
+    brinco = angular.uppercase($("#brinco").val());
+    new PNotify({text: "<strong>" + brinco + "</strong> abatido com sucesso!", type: 'success', icon: '', delay: 2500});    
+    $("#brinco").val("");
+  };
 
 }]);
 
@@ -215,23 +239,24 @@ app.controller('ctrlConAll', ['$scope', function ($scope) {
 
 app.controller('ctrlNewBull', ['$scope', function ($scope) {
 
-  angular.extend($scope, {
-    brinco: ""    
-  });
+  $("#brinco").mask("AAAAAA");
 
   $('#nascimento').datepicker({
     autoclose: true,
     format: "dd/mm/yyyy"
   });
 
-  $scope.salvar = function(){
-  
+  var brinco = "";
+
+  $scope.salvar = function(){    
+    brinco = angular.uppercase($("#brinco").val());
+    new PNotify({text: "<strong>" + brinco + "</strong> salvo com sucesso!", type: 'success', icon: '', delay: 2500});    
+    $scope.limpar();
   };
 
-  $scope.limpar = function(){
-     angular.extend($scope, {
-      brinco: ""      
-    });
+  $scope.limpar = function() {
+    $("#brinco").val("");
+    $('#nascimento').val("");
   };
 
 }]);
