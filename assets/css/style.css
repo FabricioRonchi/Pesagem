@@ -14,3 +14,14 @@ body {
 .table-total {
 	width: 130px;
 }
+
+.td-pesagem {
+	display: -webkit-box;
+	padding: 0px !important; 
+	border: 0px !important; 
+}
+
+.table-pesagem {	
+	border: none; 
+	margin: 0px;
+}
