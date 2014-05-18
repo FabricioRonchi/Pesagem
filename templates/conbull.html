@@ -1,5 +1,11 @@
 <div class="starter-template">
 	<div class="col-sm-12">
+		<div class="row">
+			<button type="button" class="btn btn-primary" ng-click="gerarPDF()">
+				<em class="glyphicon glyphicon-file"></em>&nbsp;&nbsp;Gerar PDF
+			</button>
+		</div>
+		<br />	
 		<table class="table table-bordered table-condensed">			
 			<thead>
 				<tr>
@@ -12,7 +18,7 @@
 				<tr ng-repeat="obj in bois">
 					<td>{{obj.brinco}}</td>
 					<td>20/10/2014</td>
-					<td>{{1}}</td>
+					<td>{{1}}</td>					
 				</tr>
 			</tbody>
 		</table>
