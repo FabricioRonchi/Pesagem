@@ -1,10 +1,34 @@
 'use strick'
 
 var bois = [
-  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }] },
-  { "brinco": "NDGRMI", "pesos": [ { "peso": "347,56", "data": "01/02" }, { "peso": "504,75", "data": "15/03" }] },
-  { "brinco": "DHMTOI", "pesos": [ { "peso": "262,56", "data": "01/02" }, { "peso": "506,66", "data": "15/03" }] },
-  { "brinco": "YHMDIU", "pesos": [ { "peso": "348,32", "data": "01/02" }, { "peso": "499,34", "data": "15/03" }, { "peso": "560,34", "data": "01/05" }] }
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "NDGRMI", "pesos": [ { "peso": "347,56", "data": "01/02" }] },
+  { "brinco": "DHMTOI", "pesos": [ { "peso": "262,56", "data": "01/02" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "YHMDIU", "pesos": [ { "peso": "348,32", "data": "01/02" }] }
 ];
 var app = angular.module('appBalanca', []);
 
@@ -96,61 +120,38 @@ app.controller('ctrlConAll', ['$scope', function ($scope) {
   $scope.popular = function(doc){    
     
     doc.setFontSize(11);
-    doc.text(10, 45, "Brinco");        
-    doc.text(30, 45, "01/03");
-    doc.text(47, 45, "05/04");
-    doc.text(64, 45, "Evolução");    
-    doc.text(90, 45, "04/06");
-    doc.text(107, 45, "Evolução");
-    doc.text(133, 45, "04/06");
-    doc.text(150, 45, "Evolução");
-    doc.text(176, 45, "04/06");
-    doc.text(193, 45, "Evolução");
-    doc.text(219, 45, "04/06");   
-    doc.text(236, 45, "Evolução");    
-    doc.text(265, 45, "Total");        
-
-    var linha = 55;
+        
+    var linha = 45;
     var coluna = [10,30,47,64,90,107,133,150,176,193,219,236,265];
     var _coluna = 0;
     
     doc.setFontSize(10);
     
     for(var i = 0; $scope.bois.length > i; i++){          
+      doc.text(coluna[_coluna], linha - 5, "Brinco");
       doc.text(coluna[_coluna], linha, $scope.bois[i].brinco);
       _coluna++;
-      doc.text(coluna[_coluna], linha, $scope.bois[i].peso1);
-      _coluna++;
-      doc.text(coluna[_coluna], linha, $scope.bois[i].peso2);
-      _coluna++;
-      doc.text(coluna[_coluna], linha, $scope.evolucao($scope.bois[i].peso1, $scope.bois[i].peso2));
-      _coluna++;
-      doc.text(coluna[_coluna], linha, $scope.bois[i].peso3);
-      _coluna++;
-      doc.text(coluna[_coluna], linha, $scope.evolucao($scope.bois[i].peso2, $scope.bois[i].peso3));
-      _coluna++;
-      doc.text(coluna[_coluna], linha, $scope.bois[i].peso3);
-      _coluna++;
-      doc.text(coluna[_coluna], linha, $scope.evolucao($scope.bois[i].peso2, $scope.bois[i].peso3));
-      _coluna++;
-      doc.text(coluna[_coluna], linha, $scope.bois[i].peso3);
-      _coluna++;
-      doc.text(coluna[_coluna], linha, $scope.evolucao($scope.bois[i].peso2, $scope.bois[i].peso3));
-      _coluna++;
-      doc.text(coluna[_coluna], linha, $scope.bois[i].peso3);
-      _coluna++;
-      doc.text(coluna[_coluna], linha, $scope.evolucao($scope.bois[i].peso2, $scope.bois[i].peso3));
-      _coluna++;
+      for(var o = 0; $scope.bois[i].pesos.length > o; o++){ 
+        doc.text(coluna[_coluna], linha - 5, $scope.bois[i].pesos[o].data);         
+        doc.text(coluna[_coluna], linha, $scope.bois[i].pesos[o].peso);        
+        if(o > 0){                    
+          _coluna++;
+          doc.text(coluna[_coluna], linha - 5, "Evolução");
+          doc.text(coluna[_coluna], linha, $scope.evolucao($scope.bois[i].pesos[o-1].peso, $scope.bois[i].pesos[o].peso));
+        }        
+        _coluna++;
+      }      
       doc.setFontType("bold");
-      doc.text(coluna[_coluna], linha, $scope.evolucao($scope.bois[i].peso1, $scope.bois[i].peso3));      
+      doc.text(coluna[coluna.length - 1], linha - 5, "Total");
+      doc.text(coluna[coluna.length - 1], linha, $scope.evolucao($scope.bois[i].pesos[0].peso, $scope.bois[i].pesos[$scope.bois[i].pesos.length - 1].peso));      
       doc.setFontType("normal");
-      
-      if (((i === 14 || ((i % 18) === 0))) && i !== 0) {        
+            
+      if ((i === 10) || (i % 11 === 0 && i !== 0 && i !== 11)) {                 
         doc.addPage();
-        linha = 5;
+        linha = 10;
       }
 
-      linha = linha + 10;
+      linha = linha + 15;
       _coluna = 0;
 
     }

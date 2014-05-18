@@ -6,3 +6,11 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+.table-brinco {
+	width: 80px;
+}
+
+.table-total {
+	width: 130px;
+}
