@@ -145,6 +145,8 @@ app.controller('ctrlConWeighing', ['$scope', function ($scope) {
 
 app.controller('ctrlAbaterBull', ['$scope', function ($scope) {
   
+  $("#brinco").mask("AAAAAA");
+
 }]);
 
 app.controller('ctrlConAll', ['$scope', function ($scope) {
