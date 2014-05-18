@@ -21,7 +21,8 @@ body {
 	border: 0px !important; 
 }
 
-.table-pesagem {	
+.table-pesagem {
+	display: inline;
 	border: none; 
 	margin: 0px;
 }

@@ -1,7 +1,7 @@
 'use strick'
 
 var bois = [
-  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
+  { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }, { "peso": "600,87", "data": "01/06" }] },
   { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
   { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
   { "brinco": "POIMJN", "pesos": [ { "peso": "397,99", "data": "01/02" }, { "peso": "510,97", "data": "15/03" }, { "peso": "567,87", "data": "01/05" }] },
@@ -129,10 +129,18 @@ app.controller('ctrlNewWeighing', ['$scope', function ($scope) {
   $("#brinco").mask("AAAAAA");
   $("#peso").mask("999,99");
   
-  var brinco = ""; 
+  var brinco, peso = ""; 
 
-  $scope.salvar = function(){    
+  $scope.salvar = function(){  
     brinco = angular.uppercase($("#brinco").val());
+    peso = $("#peso").val();  
+
+    if (brinco === "") {
+      return new PNotify({text: "Brinco inválido!", type: 'error', icon: '', delay: 2500});    
+    }
+    if (peso === "" || peso === ",") {
+      return new PNotify({text: "Peso inválido!", type: 'error', icon: '', delay: 2500});    
+    }      
     new PNotify({text: "<strong>" + brinco + "</strong> salvo com sucesso!", type: 'success', icon: '', delay: 2500});    
     $scope.limpar();
   };
@@ -166,7 +174,10 @@ app.controller('ctrlAbaterBull', ['$scope', function ($scope) {
   var brinco = "";
 
   $scope.abater = function() {    
-    brinco = angular.uppercase($("#brinco").val());
+    brinco = angular.uppercase($("#brinco").val());       
+    if (brinco === "") {
+      return new PNotify({text: "Brinco inválido!", type: 'error', icon: '', delay: 2500});    
+    }  
     new PNotify({text: "<strong>" + brinco + "</strong> abatido com sucesso!", type: 'success', icon: '', delay: 2500});    
     $("#brinco").val("");
   };
@@ -246,10 +257,17 @@ app.controller('ctrlNewBull', ['$scope', function ($scope) {
     format: "dd/mm/yyyy"
   });
 
-  var brinco = "";
+  var brinco, nascimento = "";
 
-  $scope.salvar = function(){    
-    brinco = angular.uppercase($("#brinco").val());
+  $scope.salvar = function(){     
+    brinco = angular.uppercase($("#brinco").val());    
+    nascimento = $("#nascimento").val(); 
+    if (brinco === "") {
+      return new PNotify({text: "Brinco inválido!", type: 'error', icon: '', delay: 2500});    
+    }
+    if (nascimento === "") {
+      return new PNotify({text: "Data de nascimento inválida!", type: 'error', icon: '', delay: 2500});    
+    }
     new PNotify({text: "<strong>" + brinco + "</strong> salvo com sucesso!", type: 'success', icon: '', delay: 2500});    
     $scope.limpar();
   };
