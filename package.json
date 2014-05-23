@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/FabricioRonchi/Pesagem/issues"
   },
-  "homepage": "https://github.com/FabricioRonchi/Pesagem"
+  "homepage": "https://github.com/FabricioRonchi/Pesagem",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "mysql": "^2.3.0",
+    "sequelize": "^1.7.5"
+  }
 }
